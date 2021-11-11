@@ -851,11 +851,20 @@ background: rgba(0, 0, 0, 0.89);
 padding-top: 6px;
 	
 }
+.footerlogin{
+color: rgba(255,255,255,.3);
+background: rgba(0, 0, 0, 0.89);
+padding-top: 6px;
+position: absolute;
+top: 600px;
+width: 100%;
+}
 #blogfooterchange{
 	position: absolute;
     top: 706px;
     width: 100%;
 }
+
 /* }
 .footer-nav h4{
     color: #2DCB74 !important;
@@ -1823,6 +1832,7 @@ button.btn1.btn-1.btn-1b:hover {
 
 }
 /* change */
+
 .login-info input[type="submit"] {
 	border: none;
     outline: none;
