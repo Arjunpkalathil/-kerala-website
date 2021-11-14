@@ -114,14 +114,62 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<h1>Sign up</h1>
 				</div>
 				<div class="login-info">
-					<form>
-						<input type="text" class="user" name="email" placeholder="First Name" required="">
-						<input type="text" class="user" name="email" placeholder="Last Name" required="">
-						<input type="text" class="user" name="email" placeholder="Email" required="">
-						<input type="number" class="user" name="email" placeholder="Mobile number" required="">
-						<input type="password" name="password" class="lock" placeholder="Password">
-						<input type="password" name="password" class="lock" placeholder="Confirm Password">
+					<form action="welcome.html" onsubmit="return validate() && validate1() && validate2() && validate3()">
+						<label id="fname" for="firstname"></label>
+						<input id="firstname" type="text" class="user" name="email" placeholder="First Name" >
+						<label id="lname" for="lastname"></label>
+						<input id="lastname" type="text" class="user" name="email" placeholder="Last Name" >
+						<label id="emailid" for="email"></label>
+						<input id="email" type="text" class="user" name="email" placeholder="Email">
+						
+						<br>
+						<label id="mobnumid" for="mobilenumber"></label>
+						<input style ="left: -2px;
+						               width: 405px;
+						               position: relative;
+						               top: -2px;
+						               border: none;
+						               border-block-end: revert;
+						               border-block-end-width: 1px;
+									   border-block-end-color: #c5c0c0;"
+									   
+						 id="mobnum" type="tel" class="user" name="Email" placeholder="Mobile number" >
+						 <h1></h1>
+						
+						<!-- <h1></h1>
+						<h2></h2>
+						<h3></h3>
+						<h4></h4>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<h1></h1> -->
+
+						<!-- METER -->
+
+						<!-- <div class="pw-meter">
+							<h2>Password Strength Meter</h2> -->
+							<!-- <div class="form-element">
+							  <label id="label" for="password">Password</label>
+							  <input type="password" id="password">
+							  <div class="pw-display-toggle-btn">
+								<i class="fa fa-eye"></i>
+								<i class="fa fa-eye-slash"></i>
+							  </div>
+							  <div class="pw-strength">
+								<span>Weak</span>
+								<span></span>
+							  </div>
+							</div>
+						  </div> -->
+						<input id="password" type="password" name="password" class="lock" placeholder="Password">
+						<label id="label" for="password"></label>
+						<!-- <input type="password" name="password" class="lock" placeholder="Confirm Password"> -->
 						<input type="submit" name="Sign In" value="Submit">
+						<!-- <button style="width: 406px;margin-top: 46px;" type="submit" id="send">Sign Up</button> -->
 						<div class="signup-text">
 							<a href="login.html">Already have an account? Login here.</a>
 						</div>
@@ -140,6 +188,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</div>
 	<!-- //footer -->
-	
+	<script src="./js/signup.js"></script>
 </body>	
 </html>

@@ -98,11 +98,14 @@ console.log(password);
  let regexp1 = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/
 
 if(regexp1.test(password))
+
+
 { console.log("valid");
     passerror.innerHTML = " Passsword is valid";
     passerror.style.color = "green";
     return true;
 }
+
 else
 { console.log("invalid");
     passerror.innerHTML = "Passsword is Invalid";
